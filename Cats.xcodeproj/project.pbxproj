@@ -20,9 +20,12 @@
 		73F5DEAD1EF9A9460017323C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F5DEAC1EF9A9460017323C /* MapKit.framework */; };
 		73F5DEB01EF9C4640017323C /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F5DEAF1EF9C4640017323C /* SearchViewController.m */; };
 		73F5DEB31EF9CA0B0017323C /* NSURLSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F5DEB21EF9CA0B0017323C /* NSURLSessionModel.m */; };
+		75268D31AC5CD26597ED7A85 /* Pods_Cats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C94BD3AB4A37902BA3A63C /* Pods_Cats.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29C94BD3AB4A37902BA3A63C /* Pods_Cats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8792F5A613523A3DDEDDE2 /* Pods-Cats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cats/Pods-Cats.release.xcconfig"; sourceTree = "<group>"; };
 		73F5DE851EF85D580017323C /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F5DE891EF85D580017323C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73F5DE8B1EF85D580017323C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		73F5DEAF1EF9C4640017323C /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		73F5DEB11EF9CA0B0017323C /* NSURLSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLSessionModel.h; sourceTree = "<group>"; };
 		73F5DEB21EF9CA0B0017323C /* NSURLSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionModel.m; sourceTree = "<group>"; };
+		C68B41CD55900B6239E62769 /* Pods-Cats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cats/Pods-Cats.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +58,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				73F5DEAD1EF9A9460017323C /* MapKit.framework in Frameworks */,
+				75268D31AC5CD26597ED7A85 /* Pods_Cats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41B8F28CAD4EFEFEB5B8DAC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C68B41CD55900B6239E62769 /* Pods-Cats.debug.xcconfig */,
+				2E8792F5A613523A3DDEDDE2 /* Pods-Cats.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		73F5DE7C1EF85D580017323C = {
 			isa = PBXGroup;
 			children = (
 				73F5DE871EF85D580017323C /* Cats */,
 				73F5DE861EF85D580017323C /* Products */,
 				73F5DEAB1EF9A9460017323C /* Frameworks */,
+				41B8F28CAD4EFEFEB5B8DAC1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				73F5DEAC1EF9A9460017323C /* MapKit.framework */,
+				29C94BD3AB4A37902BA3A63C /* Pods_Cats.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73F5DE9C1EF85D580017323C /* Build configuration list for PBXNativeTarget "Cats" */;
 			buildPhases = (
+				BA3F2CDE13C0F475A9F547D0 /* [CP] Check Pods Manifest.lock */,
 				73F5DE811EF85D580017323C /* Sources */,
 				73F5DE821EF85D580017323C /* Frameworks */,
 				73F5DE831EF85D580017323C /* Resources */,
+				ECFE8353E4A2EAC05F1C9987 /* [CP] Embed Pods Frameworks */,
+				D17F6F5599DDC47E0AD97353 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +213,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA3F2CDE13C0F475A9F547D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D17F6F5599DDC47E0AD97353 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cats/Pods-Cats-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECFE8353E4A2EAC05F1C9987 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cats/Pods-Cats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		73F5DE811EF85D580017323C /* Sources */ = {
@@ -326,6 +393,7 @@
 		};
 		73F5DE9D1EF85D580017323C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C68B41CD55900B6239E62769 /* Pods-Cats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cats/Info.plist;
@@ -337,6 +405,7 @@
 		};
 		73F5DE9E1EF85D580017323C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8792F5A613523A3DDEDDE2 /* Pods-Cats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cats/Info.plist;
